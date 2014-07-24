@@ -1,0 +1,12 @@
+{
+    "require": {
+	"zendframework/zend-feed": "2.*",
+	"zendframework/zend-config": "2.*",
+	"zendframework/zend-http": "2.*",
+	"zendframework/zend-cache": "2.*",
+	"zendframework/zend-db": "2.*",
+	"zendframework/zend-http": "2.*",
+	"zendframework/zend-servicemanager": "2.*",
+	"zendframework/zend-validator": "2.*"
+    }
+}
