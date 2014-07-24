@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 120%;
+	font-family: "museo-slab";
+	background-size: cover;
+}
+
+body.night {
+	background-image: url('/assets/images/night.jpg')
+}
+
+body.day {
+	background-image: url('/assets/images/day.jpg')
+}
+
+.night {
+	h1, h2 {
+		color: #fff;
+		text-shadow: 0px 1px 18px #000;
+	}
+}
+
+.day {
+	h1, h2 {
+		color: #000;
+		text-shadow: 0px 1px 18px #fff;
+		background-color: rgba(250,235,215,.5);
+	}
+}
+
+.content {
+
+	text-align: center;
+	min-width: 320px;
+	max-width: 75%;
+	height: 8em;
+	position: absolute;
+	left: 50%;
+	margin-left: -35%;
+
+	@media screen and (min-width: 0px) {
+		top: 2em;
+	}
+
+
+	@media screen and (min-width: 480px) {
+		top: 25%;
+		margin-top: -4em;
+	}
+
+	@media screen and (min-width: 1024px) {
+		top: 50%;
+		margin-top: -8em;
+	}
+
+	h1 {
+		font-size: 3em;
+		margin-top: 0em;
+		font-weight: 700;
+	}
+
+	h2 {
+		font-size: 1 em;
+		font-weight: 400;
+	}
+
+	img {
+		border-radius: 128px;
+		width: 4em;
+		height: 4em;
+	}
+
+
+	.sleepy {
+		font-weight: 700;
+		font-style: italic;
+	}
+
+}

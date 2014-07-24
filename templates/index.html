@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
 <head>
-	<style>
-	h1, h2 {
-	font-family: "futura-pt";
-	}
-	</style>
+    {% include 'head.twig' %}
 </head>
-<body>
-	<h1>Marius was last seen {{ time }} ago</h1>
-	<h2>Therefore it is likely that Marius {{ status }}</h2> 
-	<script type="text/javascript" src="//use.typekit.net/zgx5pld.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<body class="{{ bodyclass }}">
+    <div class="content">
+        <a href="http://magento.stackexchange.com/users/146/marius"><img src="https://www.gravatar.com/avatar/409b67b94a358c8b61ecd06aba6627e7?s=128&d=identicon&r=PG" alt="Marius"></a>
+        <h1>Is Marius Awake?</h1>
+        <h2>Marius was last seen {{ time }} ago</h2>
+        <h2>Therefore it is likely that Marius <span class="sleepy">{{ status }}</span></h2> 
+    </div>
+    <script type="text/javascript" src="//use.typekit.net/zgx5pld.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>
