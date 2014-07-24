@@ -12,24 +12,18 @@ body {
 	background-size: cover;
 }
 
-body.night {
-}
-
-body.day {
-	background-image: url('/assets/images/day.jpg')
-}
-
 .night {
 	h1, h2 {
 		color: #fff;
-		text-shadow: 0px 1px 18px #000;
+		text-shadow: 0 1px 18px #000;
 	}
 }
 
 .day {
+	background-image: url('/assets/images/day.jpg')
 	h1, h2 {
 		color: #000;
-		text-shadow: 0px 1px 18px #fff;
+		text-shadow: 0 1px 18px #fff;
 		background-color: rgba(250,235,215,.5);
 	}
 }
@@ -37,17 +31,12 @@ body.day {
 .content {
 
 	text-align: center;
-	min-width: 320px;
 	max-width: 75%;
 	height: 8em;
 	position: absolute;
+	top: 2em;
 	left: 50%;
 	margin-left: -35%;
-
-	@media screen and (min-width: 0px) {
-		top: 2em;
-	}
-
 
 	@media screen and (min-width: 480px) {
 		top: 25%;
@@ -66,7 +55,7 @@ body.day {
 	}
 
 	h2 {
-		font-size: 1 em;
+		font-size: 1em;
 		font-weight: 400;
 	}
 
