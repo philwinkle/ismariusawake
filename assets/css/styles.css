@@ -4,10 +4,11 @@
 body {
   font-size: 120%;
   font-family: "museo-slab";
+  background: url("/assets/images/night.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
-
-body.night {
-  background-image: url("/assets/images/night.jpg"); }
 
 body.day {
   background-image: url("/assets/images/day.jpg"); }
