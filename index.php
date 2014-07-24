@@ -19,7 +19,7 @@ $output = sprintf('%s days, %s hours, %s minutes and %s seconds',
     $lastSeen->s
 );
 
-$isSleeping = $lastSeen->h > 3;
+$isSleeping = $lastSeen->h >= 3;
 $asleep =  $isSleeping ? 'is sleeping' : 'is awake';
 $bodyclass = $isSleeping ? 'night' : 'day';
 
